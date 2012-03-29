@@ -6,30 +6,44 @@ $(document).ready(function(){
 	$("#head").click(function(){
 		if(headclix<9){
 			headclix+=1;
+			$(this).animate({left:"-=367px"},500);
 		}
 		else{
 			headclix = 0;
+			$(this).animate({left:"0px"},500);
 		}
 	});
 	$("#eyes").click(function(){
-		if(eyeclix<9)
+		if(eyeclix<9){
 			eyeclix++;
+			$(this).animate({left:"-=367px"},500);
+			}
 		else
+		{
 			eyeclix = 0;
-			
+			$(this).animate({left:"0px"},500);
+		}	
 	
 	});
 	$("#nose").click(function(){
-		if(noseclick<9)
-			noseclick++;
-		else
-			noseclick=0;
+		if(noseclix<9){
+			noseclix++;
+			$(this).animate({left:"-=367px"},500);
+			}
+		else{
+			noseclix=0;
+			$(this).animate({left:"0px"},500);
+			}
 	});
 	$("#mouth").click(function(){
-		if(mouthclix<9)
-			mouthclix++
-		else
+		if(mouthclix<9){
+			mouthclix++;
+			$(this).animate({left:"-=367px"},500);
+			}
+		else{
 			mouthclix = 0;
+			$(this).animate({left:"0px"},500);
+			}
 	});
 });//end doc.onready function
 	function lightning_one(t){
